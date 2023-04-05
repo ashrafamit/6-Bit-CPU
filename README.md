@@ -1,5 +1,5 @@
 # 6-Bit-CPU
-Word Size of CPU = 6
+Word Size of CPU = 6\n
 ALU Operations = AND,ADD,ROR
 Register Number = 5
 Size of RAM = 9
