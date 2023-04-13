@@ -11,6 +11,11 @@
 #ISA
 <ol>
   <li>Register Mode (type of op=00) : 2 bit (type of op) + 2 bit (op) + 3 bit (Reg1) + 3 bit (Reg1) + 5 bit (don't care)</li>
+  <ul>
+    <li>AND (OP= 00)</li>
+    <li>ADD (OP= 01)</li>
+    <li>ROR (OP= 10)</li>
+  </ul>
   <li>Immediate Mode (type of op=01) : 2 bit (type of op) + 2 bit (op) + 3 bit (Reg1) + 6 bit (Imm value) + 2 bit (don't care)</li>
   <ul>
     <li>AND (OP= 00)</li>
@@ -23,4 +28,30 @@
     <li>JL (OP= 01)</li>
   </ul>
 </ol>
+
+#Sample Assembly and Machine Code
+<table>
+  <tr>
+    <th>Assembly Code</th>
+    <th>Machine Code</th>
+  </tr>
+  <tr>
+    <td>START: ADD R1, 0</td>
+    <td>010100100000000</td>
+  </tr>
+  <tr>
+    <td>ADD R2, 1</td>
+    <td>010101000000100</td>
+  </tr>
+  <tr>
+    <td>AND R1, R2</td>
+    <td>000000101000000</td>
+  </tr>
+  <tr>
+    <td>JMP START</td>
+    <td>100000010000000</td>
+  </tr>
+</table>
+
+
 
