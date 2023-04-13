@@ -8,7 +8,7 @@
   <li>CPU Instructions = Register mode, Immediate mode, JMP,JL</li>
 </ul>
 
-#ISA
+<h2>ISA</h2>
 <ol>
   <li>Register Mode (type of op=00) : 2 bit (type of op) + 2 bit (op) + 3 bit (Reg1) + 3 bit (Reg1) + 5 bit (don't care)</li>
   <ul>
@@ -29,7 +29,7 @@
   </ul>
 </ol>
 
-#Sample Assembly and Machine Code
+<h2>Sample Assembly and Machine Code</h2>
 <table>
   <tr>
     <th>Assembly Code</th>
